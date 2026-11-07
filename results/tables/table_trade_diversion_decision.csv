@@ -1,0 +1,2 @@
+﻿task,status,reason
+trade diversion,not_run,"outside the detection layer: the database has no review dates or compliance outcomes, and a descriptive shift cannot identify diversion caused by the window"

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived tables, please cite this repository. Author names are withheld while the accompanying manuscript is under double-blind review."
+title: "rst-window-audit: reproducibility package for a CITES RST three-year window audit"
+abstract: >-
+  Analysis code, frozen aggregate tables and figures for an audit of the 2026
+  CITES Review of Significant Trade three-year sharp-increase window. The
+  package rebuilds the exporter x taxon panel from the official CITES Trade
+  Database, constructs one-year and three-year sharp-increase labels, fits a
+  rule-feature-excluded rolling-origin ranking model, verifies divergence
+  cases against raw records, and compares window and threshold arms on a fixed
+  candidate list. Raw CITES records are not redistributed.
+authors:
+  - name: "Anonymous Authors"
+version: "1.0.0"
+date-released: "2026-11-05"
+license: MIT
+keywords:
+  - CITES
+  - Review of Significant Trade
+  - sharp increase
+  - policy audit
+  - reproducibility
+  - wildlife trade
+type: software

@@ -1,0 +1,72 @@
+# Frozen parameter snapshot for the manuscript.
+# The executable source of truth is src/rst_audit/config.py; this file is a
+# human-readable record for reviewers. Change both together if a parameter is
+# deliberately revised.
+
+data:
+  source: CITES Trade Database
+  version: "2026.1"
+  url: https://trade.cites.org/
+  year_min: 2000
+  year_max: 2024
+  primary_volume:
+    reporter_type: E
+    origin: "NULL or Exporter"
+    unit: "Number of specimens"
+  test_years: [2018, 2019, 2020, 2021, 2022]
+  ext_years: [2016, 2017, 2023]
+  seeds: [0, 1, 2]
+
+rule:
+  multiplier: 4.0
+  min_five_year_mean: 100.0
+  global_share: 0.10
+  lookback_years: 5
+
+labels:
+  one_year: "unit or global rule in T"
+  three_year: "unit rule in T, T-1 or T-2, or global rule in T"
+  train_label: y_B
+  audit_label: y_B3
+
+audit:
+  feature_set: no_leak_strict
+  n_features: 60
+  top_k: 100
+  divergence_top: 50
+  per_year_top: 10
+  support_window_years: 5
+  min_base_positive: 2
+  min_record_ratio: 0.5
+
+model:
+  library: LightGBM
+  objective: binary
+  metric: binary_logloss
+  n_rounds: 300
+  learning_rate: 0.05
+  num_leaves: 31
+  min_data_in_leaf: 50
+  feature_fraction: 0.8
+  bagging_fraction: 0.8
+  bagging_freq: 1
+  positive_weight: "negative / positive"
+  evaluation: rolling origin
+  role: candidate ranking only
+
+model_family:
+  libraries: [XGBoost, RandomForest]
+  n_estimators: 300
+  xgb_max_depth: 4
+  rf_max_depth: 10
+  rf_min_samples_leaf: 5
+  xgb_threads: 20   # XGBoost hist trees depend on the thread count
+
+arms:
+  windows: [1, 2, 3]
+  thresholds: [2.0, 3.0, 4.0, 5.0]
+  baseline: {window: 1, threshold: 4.0}
+
+checks:
+  tolerance: 5.0e-4
+  expectations: 66

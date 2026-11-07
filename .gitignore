@@ -1,0 +1,34 @@
+# Raw trade records and derived panels are never redistributed.
+data/*
+!data/README.md
+!data/.gitkeep
+
+# Local pipeline output (regenerated; the paper's frozen aggregates live in results/).
+output/
+*.duckdb
+*.duckdb.wal
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# LaTeX build debris
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz

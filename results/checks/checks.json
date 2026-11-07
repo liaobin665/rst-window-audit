@@ -1,0 +1,402 @@
+{
+  "checks": [
+    {
+      "check": "GT.active_2016",
+      "actual": 7.0,
+      "expected": 7.0,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.active_2017",
+      "actual": 49.0,
+      "expected": 49.0,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.active_jump",
+      "actual": 7.0,
+      "expected": 7.0,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.defensible_all",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.defensible_exclude_GT",
+      "actual": 30,
+      "expected": 30,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.defensible_exclude_break",
+      "actual": 28,
+      "expected": 28,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.records_2016",
+      "actual": 628.0,
+      "expected": 628.0,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.records_2017",
+      "actual": 1115.0,
+      "expected": 1115.0,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.records_jump",
+      "actual": 1.7754777070063694,
+      "expected": 1.7754777070063694,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.share_B3",
+      "actual": 0.0597159457714654,
+      "expected": 0.0597159457714654,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.share_all",
+      "actual": 0.0039619176879166,
+      "expected": 0.0039619176879166,
+      "status": "PASS"
+    },
+    {
+      "check": "GT.share_three_year",
+      "actual": 0.0462911321807027,
+      "expected": 0.0462911321807027,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.construction_errors",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.low_records",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.multi",
+      "actual": 18,
+      "expected": 18,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.n",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.single",
+      "actual": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "check": "cases.verified",
+      "actual": 18,
+      "expected": 18,
+      "status": "PASS"
+    },
+    {
+      "check": "coverage.first_year",
+      "actual": 2005,
+      "expected": 2005,
+      "status": "PASS"
+    },
+    {
+      "check": "coverage.last_year",
+      "actual": 2023,
+      "expected": 2023,
+      "status": "PASS"
+    },
+    {
+      "check": "coverage.max_active_units",
+      "actual": 14090,
+      "expected": 14090,
+      "status": "PASS"
+    },
+    {
+      "check": "coverage.max_active_year",
+      "actual": 2015,
+      "expected": 2015,
+      "status": "PASS"
+    },
+    {
+      "check": "divergence.per_year_defensible",
+      "actual": 31,
+      "expected": 31,
+      "status": "PASS"
+    },
+    {
+      "check": "divergence.pooled_defensible",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "divergence.pooled_n",
+      "actual": 50,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "check": "divergence.unfiltered_defensible",
+      "actual": 27,
+      "expected": 27,
+      "status": "PASS"
+    },
+    {
+      "check": "flags.T",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "flags.T-1",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "flags.T-2",
+      "actual": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "import.median_ratio",
+      "actual": 0.1476520489973404,
+      "expected": 0.1476520489973404,
+      "status": "PASS"
+    },
+    {
+      "check": "import.n",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "import.origin_eq_any",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "check": "import.origin_eq_matched",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "import.origin_full_missing",
+      "actual": 28,
+      "expected": 28,
+      "status": "PASS"
+    },
+    {
+      "check": "import.paired",
+      "actual": 29,
+      "expected": 29,
+      "status": "PASS"
+    },
+    {
+      "check": "import.within_2x",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "import.within_5x",
+      "actual": 14,
+      "expected": 14,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.overlap_max",
+      "actual": 22,
+      "expected": 22,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.overlap_min",
+      "actual": 12,
+      "expected": 12,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.pooled_defensible_max",
+      "actual": 34.0,
+      "expected": 34.0,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.pooled_defensible_min",
+      "actual": 24.0,
+      "expected": 24.0,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.rows",
+      "actual": 18,
+      "expected": 18,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.three_year_max",
+      "actual": 32,
+      "expected": 32,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.three_year_min",
+      "actual": 19,
+      "expected": 19,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.three_year_share_max",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check": "model_family.three_year_share_min",
+      "actual": 0.8518518518518519,
+      "expected": 0.8518518518518519,
+      "status": "PASS"
+    },
+    {
+      "check": "threshold_4x.one_year_add",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "threshold_4x.one_year_after",
+      "actual": 34.2,
+      "expected": 34.2,
+      "status": "PASS"
+    },
+    {
+      "check": "threshold_4x.three_year_after",
+      "actual": 60.4,
+      "expected": 60.4,
+      "status": "PASS"
+    },
+    {
+      "check": "threshold_4x.three_year_verified",
+      "actual": 15.0,
+      "expected": 15.0,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.cases_both",
+      "actual": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.cases_t1_only",
+      "actual": 24,
+      "expected": 24,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.cases_total",
+      "actual": 34,
+      "expected": 34,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.t2_only_share",
+      "actual": 0.2837314396384764,
+      "expected": 0.2837314396384764,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.universe_positives",
+      "actual": 3098,
+      "expected": 3098,
+      "status": "PASS"
+    },
+    {
+      "check": "trigger_split.universe_t2_only",
+      "actual": 879,
+      "expected": 879,
+      "status": "PASS"
+    },
+    {
+      "check": "window.base",
+      "actual": 34.2,
+      "expected": 34.2,
+      "status": "PASS"
+    },
+    {
+      "check": "window.one_year_after",
+      "actual": 40.4,
+      "expected": 40.4,
+      "status": "PASS"
+    },
+    {
+      "check": "window.one_year_verified",
+      "actual": 2.6,
+      "expected": 2.6,
+      "status": "PASS"
+    },
+    {
+      "check": "window.ratio_verified",
+      "actual": 5.769230769230769,
+      "expected": 5.769230769230769,
+      "status": "PASS"
+    },
+    {
+      "check": "window.three_year_3x_after",
+      "actual": 63.4,
+      "expected": 63.4,
+      "status": "PASS"
+    },
+    {
+      "check": "window.three_year_3x_verified",
+      "actual": 15.0,
+      "expected": 15.0,
+      "status": "PASS"
+    },
+    {
+      "check": "window.three_year_additional",
+      "actual": 26.2,
+      "expected": 26.2,
+      "status": "PASS"
+    },
+    {
+      "check": "window.three_year_after",
+      "actual": 60.4,
+      "expected": 60.4,
+      "status": "PASS"
+    },
+    {
+      "check": "window.three_year_verified",
+      "actual": 15.0,
+      "expected": 15.0,
+      "status": "PASS"
+    },
+    {
+      "check": "window.two_year_verified",
+      "actual": 14.8,
+      "expected": 14.8,
+      "status": "PASS"
+    }
+  ],
+  "failed": 0,
+  "total": 66
+}

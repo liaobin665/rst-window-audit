@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Unit and hygiene tests
+        run: pytest
+
+      - name: Redraw figures and run numeric checks
+        run: rst-audit reproduce
+
+      - name: Helper smoke test
+        run: python scripts/prepare_cites_db.py --help
+
+      - name: Upload check record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checks
+          path: |
+            results/checks/checks.csv
+            results/checks/checks.json
+          if-no-files-found: warn

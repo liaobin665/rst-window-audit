@@ -1,0 +1,4 @@
+﻿selection,n,n_defensible,n_three_year,n_gt,top1,top1_share
+all,50,34,34,12,GT,0.24
+exclude_GT,50,30,30,0,NL,0.16
+exclude_reporting_break,50,28,28,0,NL,0.22

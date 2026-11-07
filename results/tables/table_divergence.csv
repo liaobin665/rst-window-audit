@@ -1,0 +1,4 @@
+﻿selection,n,n_defensible,n_three_year,n_near_4x,n_other_defensible,plant_share,top1_exporter,top1_share,n_gt,gt_share
+pooled_top50,50,34,34,0,0,0.76,GT,0.24,12,0.24
+per_year_top10,50,31,31,0,0,0.66,GT,0.22,11,0.22
+unfiltered_top50,50,27,27,0,0,0.72,GT,0.2,10,0.2

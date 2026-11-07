@@ -1,0 +1,88 @@
+{
+  "cases": {
+    "n": 34,
+    "multi": 18,
+    "single": 16,
+    "verified": 18,
+    "low_records": 0,
+    "construction_errors": 0
+  },
+  "flags": {
+    "T-2": 10,
+    "T-1": 34,
+    "T": 0
+  },
+  "divergence": {
+    "pooled_n": 50,
+    "pooled_defensible": 34,
+    "per_year_defensible": 31,
+    "unfiltered_defensible": 27
+  },
+  "trigger_split": {
+    "cases_total": 34,
+    "cases_t1_only": 24,
+    "cases_both": 10,
+    "universe_positives": 3098,
+    "universe_t2_only": 879,
+    "t2_only_share": 0.2837314396384764
+  },
+  "window": {
+    "base": 34.2,
+    "three_year_additional": 26.2,
+    "three_year_verified": 15.0,
+    "three_year_after": 60.4,
+    "two_year_verified": 14.8,
+    "one_year_verified": 2.6,
+    "one_year_after": 40.4,
+    "three_year_3x_verified": 15.0,
+    "three_year_3x_after": 63.4,
+    "ratio_verified": 5.769230769230769
+  },
+  "threshold_4x": {
+    "one_year_add": 0.0,
+    "three_year_verified": 15.0,
+    "three_year_after": 60.4,
+    "one_year_after": 34.2
+  },
+  "import": {
+    "n": 34,
+    "paired": 29,
+    "origin_full_missing": 28,
+    "origin_eq_any": 2,
+    "origin_eq_matched": 0,
+    "within_2x": 6,
+    "within_5x": 14,
+    "median_ratio": 0.1476520489973404
+  },
+  "GT": {
+    "share_all": 0.0039619176879166,
+    "share_three_year": 0.0462911321807027,
+    "share_B3": 0.0597159457714654,
+    "defensible_all": 34,
+    "defensible_exclude_GT": 30,
+    "defensible_exclude_break": 28,
+    "records_2016": 628.0,
+    "records_2017": 1115.0,
+    "active_2016": 7.0,
+    "active_2017": 49.0,
+    "records_jump": 1.7754777070063694,
+    "active_jump": 7.0
+  },
+  "model_family": {
+    "rows": 18,
+    "pooled_defensible_min": 24.0,
+    "pooled_defensible_max": 34.0,
+    "three_year_min": 19,
+    "three_year_max": 32,
+    "three_year_share_min": 0.8518518518518519,
+    "three_year_share_max": 1.0,
+    "overlap_min": 12,
+    "overlap_max": 22
+  },
+  "coverage": {
+    "first_year": 2005,
+    "last_year": 2023,
+    "max_active_units": 14090,
+    "max_active_year": 2015
+  }
+}
